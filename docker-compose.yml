@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  pramuja_web:
+    container_name: pramuja_web
+    image: nginx:latest
+    ports:
+      - 60:80
+    volumes:
+      - ./src:/usr/share/nginx/html
+    restart: always
